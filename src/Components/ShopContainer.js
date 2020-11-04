@@ -7,7 +7,7 @@ import ProductCard from "./ProductCard";
 import Product from "./Product";
 import Header from "./Header";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 class ShopContainer extends Component {
   constructor(state) {
@@ -116,7 +116,7 @@ class ShopContainer extends Component {
                       quantity={item.quantity}
                       rating={item.rating}
                       rating_count={item.rating_count}
-                      update={this.update}
+                      // update={this.update}
                     />
                   </Route>
                 ))}
