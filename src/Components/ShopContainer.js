@@ -60,6 +60,7 @@ class ShopContainer extends Component {
       .get("https://e-commerce-project-2020.herokuapp.com/inventory/")
       .then((res) => {
         this.setState({ products: res.data });
+        console.log(res.data);
       })
       .catch((error) => {
         console.log("error");
