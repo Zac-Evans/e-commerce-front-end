@@ -7,7 +7,7 @@ import ProductCard from "./ProductCard";
 import Product from "./Product";
 import Header from "./Header";
 
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class ShopContainer extends Component {
   constructor(state) {
