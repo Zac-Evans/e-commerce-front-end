@@ -74,8 +74,8 @@ class ShopContainer extends Component {
     return (
       <div>
         <Header
-          // rerenderParentCallback={this.rerenderParentCallback}
-          cart_count={this.state.cart_count}
+        // rerenderParentCallback={this.rerenderParentCallback}
+        // cart_count={this.state.cart_count}
         />
         {this.state.products && (
           <Container>
@@ -83,7 +83,7 @@ class ShopContainer extends Component {
               <Switch>
                 <Route exact path="/">
                   <hr />
-                  <Row>
+                  <Row className="d-flex justify-content-center">
                     {this.state.products.map((item, index) => (
                       <ProductCard
                         key={item.id}
