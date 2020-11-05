@@ -78,8 +78,7 @@ class Cart extends Component {
       <div style={{ maxWidth: "600px" }}>
         <h2 className="mt-5 mb-5 text-center">Your shopping cart:</h2>
         {this.state.products
-          ? "Your cart is empty."
-          : this.state.products.map((item, index) => (
+          ? this.state.products.map((item, index) => (
               <CartItem
                 key={item.id}
                 id={item.id}
@@ -93,7 +92,8 @@ class Cart extends Component {
                 rating_count={item.rating_count}
                 // rerenderParentCallback={this.rerenderParentCallback}
               />
-            ))}
+            ))
+          : "Your cart is empty."}
       </div>
     );
   }
