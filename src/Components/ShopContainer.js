@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import axios from "axios";
 import ProductCard from "./ProductCard";
 import Product from "./Product";
-import Header from "./Header";
 import Image from "react-bootstrap/Image";
 import Background from "../images/fruit-background.jpeg";
 

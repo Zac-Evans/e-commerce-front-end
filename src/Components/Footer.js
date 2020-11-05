@@ -26,7 +26,6 @@ class Footer extends Component {
           expand="md"
           style={{
             position: "relative",
-
             height: "150px",
             clear: "both",
             paddingTop: "20px",

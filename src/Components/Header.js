@@ -11,7 +11,6 @@ import LogOut from "./Admin_Components/LogOutBtn";
 import Login from "./Admin_Components/LoginBtn";
 import AdminBtn from "./Admin_Components/AdminBtn";
 import CartIcon from "../images/cart-icon.png";
-import CartCounter from "./CartCounter";
 import History from "./Admin_Components/History";
 
 class Header extends Component {

@@ -5,8 +5,6 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import { Fade } from "react-awesome-reveal";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Dropdown from "react-bootstrap/Dropdown";
 import axios from "axios";
 
 class CartItem extends Component {

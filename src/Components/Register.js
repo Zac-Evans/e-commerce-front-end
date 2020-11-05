@@ -3,7 +3,6 @@ import { Link, Redirect } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
-import Header from "./Header";
 
 export default class Register extends Component {
   constructor() {

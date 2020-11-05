@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
 import axios from "axios";
-import Header from "./Header";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
