@@ -78,7 +78,6 @@ export default class Register extends Component {
     } else {
       return (
         <div>
-          <Header />
           <Form onSubmit={this.handleSubmit} className="m-4 w-50 mx-auto ">
             <h1 className="text-center">Register</h1>
             <Form.Group>
