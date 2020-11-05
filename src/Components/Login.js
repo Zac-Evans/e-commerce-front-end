@@ -71,7 +71,6 @@ export default class Login extends Component {
     } else {
       return (
         <div>
-          <Header />
           <Form onSubmit={this.handleSubmit} className="m-4 w-50 mx-auto">
             <h1 className="text-center">Login</h1>
             <Form.Group>
