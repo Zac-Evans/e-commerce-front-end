@@ -25,7 +25,7 @@ class CartItem extends Component {
       console.log(cart);
       let filteredCart = cart.filter((item) => item !== this.props.id);
       sessionStorage.setItem("cart", JSON.stringify(filteredCart));
-      addedToCart();
+
       // this.props.rerenderParentCallback();
     }
 
