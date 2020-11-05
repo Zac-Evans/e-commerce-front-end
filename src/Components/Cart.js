@@ -77,22 +77,23 @@ class Cart extends Component {
     return (
       <div style={{ maxWidth: "600px" }}>
         <h2 className="mt-5 mb-5 text-center">Your shopping cart:</h2>
-        {this.state.products &&
-          this.state.products.map((item, index) => (
-            <CartItem
-              key={item.id}
-              id={item.id}
-              product_name={item.product_name}
-              shortDescription={item.shortDescription}
-              longDescription={item.longDescription}
-              photo={item.photo}
-              price={item.price}
-              quantity={item.quantity}
-              rating={item.rating}
-              rating_count={item.rating_count}
-              // rerenderParentCallback={this.rerenderParentCallback}
-            />
-          ))}
+        {this.state.products
+          ? "Your cart is empty."
+          : this.state.products.map((item, index) => (
+              <CartItem
+                key={item.id}
+                id={item.id}
+                product_name={item.product_name}
+                shortDescription={item.shortDescription}
+                longDescription={item.longDescription}
+                photo={item.photo}
+                price={item.price}
+                quantity={item.quantity}
+                rating={item.rating}
+                rating_count={item.rating_count}
+                // rerenderParentCallback={this.rerenderParentCallback}
+              />
+            ))}
       </div>
     );
   }
