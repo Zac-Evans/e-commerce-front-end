@@ -49,14 +49,14 @@ class CartItem extends Component {
           )}`
         )
         .then((res) => {
-          console.log(res);
-          axios.delete(
-            "https://e-commerce-project-2020.herokuapp.com/delete-from-cart",
-            {
-              shopping_cart_id: res.data.id,
-              product_id: this.props.id,
-            }
-          );
+          console.log(this.props.id);
+          axios
+            .delete(
+              `https://e-commerce-project-2020.herokuapp.com/delete-from-cart/${res.data[0].id}/${this.props.id}`
+            )
+            .catch((error) => {
+              console.log("error");
+            });
           this.clearState();
         });
     }
