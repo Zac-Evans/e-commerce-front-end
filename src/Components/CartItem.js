@@ -22,7 +22,6 @@ class CartItem extends Component {
     //Check if logged in. If not, add to local storage cart
     if (!sessionStorage.getItem("userId")) {
       let cart = JSON.parse(sessionStorage.getItem("cart"));
-      console.log(cart);
       let filteredCart = cart.filter((item) => item !== this.props.id);
       sessionStorage.setItem("cart", JSON.stringify(filteredCart));
 

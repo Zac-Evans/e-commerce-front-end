@@ -79,21 +79,22 @@ class ShopContainer extends Component {
         // rerenderParentCallback={this.rerenderParentCallback}
         // cart_count={this.state.cart_count}
         />
-        <Image
-          fluid
-          style={{
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
-            width: "1100px",
-          }}
-          src={Background}
-        />
+
         {this.state.products && (
           <Container>
             <Router>
               <Switch>
                 <Route exact path="/">
+                  <Image
+                    fluid
+                    style={{
+                      display: "block",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                      width: "1100px",
+                    }}
+                    src={Background}
+                  />
                   <Row className="d-flex justify-content-center">
                     {this.state.products.map((item, index) => (
                       <ProductCard

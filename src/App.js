@@ -12,6 +12,7 @@ import Delete from "./Components/Admin_Components/Delete";
 import ShopContainer from "./Components/ShopContainer";
 import Checkout from "./Components/Checkout";
 import CompleteOrderhistory from "./Components/CompleteOrderHistory";
+import Footer from "./Components/Footer";
 
 export default class App extends Component {
   render() {
@@ -35,6 +36,7 @@ export default class App extends Component {
             component={CompleteOrderhistory}
           />
         </Switch>
+        <Footer />
       </Router>
     );
   }
