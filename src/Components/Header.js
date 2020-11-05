@@ -49,7 +49,7 @@ class Header extends Component {
             <Form
               inline
               className="w-100 d-flex justify-content-center"
-              style={{ minWidth: "300px" }}
+              style={{ minWidth: "310px" }}
             >
               <FormControl
                 htmlFor="search"

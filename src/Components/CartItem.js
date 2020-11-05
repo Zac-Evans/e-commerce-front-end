@@ -95,6 +95,8 @@ class CartItem extends Component {
               </DropdownButton>
             </Dropdown> */}
             <Button
+              style={{ minWidth: "90px" }}
+              className="btn-sm"
               onClick={() => {
                 this.removeFromCart();
               }}
