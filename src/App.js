@@ -33,7 +33,7 @@ export default class App extends Component {
               <Route path="/admin/delete" component={Delete} />
               <Route path="/shop" component={ShopContainer} />
               <Route path="/checkout" component={Checkout} />
-              <Route path="/checkout" component={Checkout} />
+
               <Route
                 path="/order-history/user"
                 component={CompleteOrderhistory}
