@@ -49,6 +49,7 @@ class CartItem extends Component {
           )}`
         )
         .then((res) => {
+          console.log(res);
           axios.delete(
             "https://e-commerce-project-2020.herokuapp.com/delete-from-cart",
             {
