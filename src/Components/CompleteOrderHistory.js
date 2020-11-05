@@ -41,7 +41,6 @@ class CompleteOrderhistory extends Component {
 
     return (
       <div>
-        <Header />
         {this.state.order && (
           <Fade>
             <Container>

@@ -26,7 +26,7 @@ class ProductCard extends Component {
                 <Card.Title>{this.props.product_name}</Card.Title>
               </a>
               <Card.Text>{this.props.shortDescription}</Card.Text>
-              <div>${this.props.price}</div>
+              <h2>${this.props.price}</h2>
               <ProductRating
                 id={this.props.id}
                 rating={this.props.rating}

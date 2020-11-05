@@ -31,12 +31,19 @@ class Footer extends Component {
       isAdmin = true;
     }
     return (
-      <div>
+      <div className="mt-auto">
         <Navbar
           className="d-flex justify-content-center"
           bg="dark"
           variant="dark"
           expand="md"
+          style={{
+            position: "relative",
+
+            height: "150px",
+            clear: "both",
+            paddingTop: "20px",
+          }}
         >
           <Navbar.Brand href="/" className="mb-0 pb-0">
             <Image

@@ -63,7 +63,6 @@ export default class Checkout extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Fade>
           <Container fluid>
             <Row>
