@@ -14,7 +14,7 @@ class Product extends React.Component {
         <Fade triggerOnce>
           <a href="/">Back to results</a>
           <Row className="text-center">
-            <Col className="col-12 col-lg-4 d-flex justify-content-center">
+            <Col className="">
               <Image src={this.props.photo} fluid></Image>
             </Col>
             <Col className="col-12 col-md-4">
