@@ -50,7 +50,7 @@ export default class Checkout extends Component {
         securityCode: securityCode,
       })
       .then(() => {
-        alert("Order was placed");
+        alert("Your order has been placed!");
         return <Redirect push to="/" />;
       });
   };
@@ -166,7 +166,9 @@ export default class Checkout extends Component {
                     </Col>
                   </Row>
 
-                  <Button type="submit">Place Order</Button>
+                  <Button type="submit" onClick={this.handleSubmit}>
+                    Place Order
+                  </Button>
                 </Form>
               </Col>
             </Row>
