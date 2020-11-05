@@ -78,7 +78,7 @@ export default class Checkout extends Component {
                 <Form
                   onSubmit={this.handleSubmit}
                   className="mx-auto"
-                  style={{ maxWidth: "1200px", minWidth: "600px" }}
+                  style={{ maxWidth: "1200px" }}
                 >
                   <h6 style={formStyle}>
                     Enter your shipping information here.
