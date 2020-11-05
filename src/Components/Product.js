@@ -29,7 +29,7 @@ class Product extends React.Component {
               <hr />
               <h5>About this item</h5>
               <hr />
-              <p>{this.props.longDescription}</p>
+              <ul>{this.props.longDescription}</ul>
             </Col>
             <Col className="col-12 col-md-4">
               <OrderCard
