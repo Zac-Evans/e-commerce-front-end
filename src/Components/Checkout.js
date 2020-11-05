@@ -66,6 +66,7 @@ export default class Checkout extends Component {
               `https://e-commerce-project-2020.herokuapp.com/delete-whole-cart/${res.data[0].id}`
             );
           })
+          .then()
           .then(() => {
             window.location.href = "/";
           });

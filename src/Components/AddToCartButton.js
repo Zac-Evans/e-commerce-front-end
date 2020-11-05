@@ -25,7 +25,7 @@ class AddToCartButton extends Component {
     let addedToCart = () => {
       this.setState({ visible: true });
       this.timeout = setTimeout(this.visibleFalse, 3000);
-      addedToCart();
+
       // this.props.rerenderParentCallback();
     };
     //Check if logged in. If not, add to local storage cart
@@ -38,6 +38,7 @@ class AddToCartButton extends Component {
         cart.push(this.props.id);
         sessionStorage.setItem("cart", JSON.stringify(cart));
       }
+      addedToCart();
     }
     //If logged in, store cart in database
     else {
