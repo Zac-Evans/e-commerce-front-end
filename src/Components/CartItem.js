@@ -19,9 +19,6 @@ class CartItem extends Component {
   }
 
   removeFromCart = () => {
-    let addedToCart = () => {
-      this.setState({ value: this.state.value + 1 });
-    };
     //Check if logged in. If not, add to local storage cart
     if (!sessionStorage.getItem("userId")) {
       let cart = JSON.parse(sessionStorage.getItem("cart"));
@@ -50,7 +47,6 @@ class CartItem extends Component {
             }
           );
         });
-      addedToCart();
     }
   };
 

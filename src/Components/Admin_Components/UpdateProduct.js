@@ -110,7 +110,7 @@ export default class UpdateProduct extends Component {
               <div className="text-center">
                 <ul style={{ listStyle: "none" }}>
                   <li>{this.state.item.product_name}</li>
-                  <li>{this.state.item.shortDescription}</li>
+                  <li>{this.state.item.photo}</li>
                 </ul>
               </div>
               <Form onSubmit={this.handleUpdateSubmit}>

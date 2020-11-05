@@ -7,6 +7,7 @@ import ProductCard from "./ProductCard";
 import Product from "./Product";
 import Header from "./Header";
 import Image from "react-bootstrap/Image";
+import Background from "../images/fruit-background.jpeg";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -78,7 +79,16 @@ class ShopContainer extends Component {
         // rerenderParentCallback={this.rerenderParentCallback}
         // cart_count={this.state.cart_count}
         />
-        <Image src="https://www.naturesproduce.com/wp-content/uploads/2018/08/citrus-header-2.jpg" />
+        <Image
+          fluid
+          style={{
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            width: "1100px",
+          }}
+          src={Background}
+        />
         {this.state.products && (
           <Container>
             <Router>
