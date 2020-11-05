@@ -16,7 +16,6 @@ class Cart extends Component {
   componentDidMount() {
     if (!sessionStorage.getItem("userId")) {
       let thisCart = JSON.parse(sessionStorage.getItem("cart"));
-      console.log(thisCart.length);
 
       if (thisCart?.length) {
         let productArray = JSON.parse(sessionStorage.getItem("cart"));
@@ -82,7 +81,7 @@ class Cart extends Component {
     return (
       <div style={{ maxWidth: "600px" }}>
         <h2 className="mt-5 mb-5 text-center">Your shopping cart:</h2>
-        {this.state.products &&
+        {this.state.products ? (
           this.state.products.map((item, index) => (
             <CartItem
               key={item.id}
@@ -97,7 +96,10 @@ class Cart extends Component {
               rating_count={item.rating_count}
               // rerenderParentCallback={this.rerenderParentCallback}
             />
-          ))}
+          ))
+        ) : (
+          <h3 className="text-center text-danger">Your cart is empty.</h3>
+        )}
       </div>
     );
   }
