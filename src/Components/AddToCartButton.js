@@ -81,7 +81,7 @@ class AddToCartButton extends Component {
         <div>
           <Button
             variant="primary"
-            className="addToCartButton m-1"
+            className="addToCartButton m-1 btn-lg"
             onClick={this.addToCart}
           >
             Add to Cart
