@@ -126,11 +126,20 @@ class ShopContainer extends Component {
             </Router>
           </Container>
         ) : (
-          <div>
-            <Spinner animation='border' role='status'>
-              <span className='sr-only'>Loading...</span>
-            </Spinner>
-          </div>
+          <Container className='pl-0 pr-0'>
+            <Image fluid width='1200px' className='m-0 ' src={Background} />
+
+            <Row className='d-flex justify-content-center'>
+              <Spinner
+                animation='border'
+                role='status'
+                className='center'
+                style={{ width: '100px', height: '100px', marginTop: '100px' }}
+              >
+                <span className='sr-only'>Loading...</span>
+              </Spinner>
+            </Row>
+          </Container>
         )}
       </div>
     );
